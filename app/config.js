@@ -1,3 +1,5 @@
+'use strict';
+
 var config = {};
 
 // DB Params
