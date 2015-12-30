@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Antoine-Demailly/node-app#readme",
   "engines": {
     "node": "v5.2.0"
+  },
+  "dependencies": {
+    "express": "4.13.3"
   }
 }
