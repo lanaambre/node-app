@@ -1,2 +1,2 @@
-# node-app
+# Node Application
 Base structure for node application
