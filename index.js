@@ -1,3 +1,6 @@
+// Config
+var config = require('./app/config');
+
 var express       = require('express');
 var app           = express();
 
