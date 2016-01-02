@@ -21,6 +21,7 @@
     "node": "v5.2.0"
   },
   "dependencies": {
+    "colors": "1.1.2",
     "express": "4.13.3",
     "jade": "1.11.0",
     "js-yaml": "3.4.6",
