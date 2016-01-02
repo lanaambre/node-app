@@ -13,4 +13,4 @@ cd myApp
 npm install
 ```
 
-### Configuration (before launch application)
+### Configuration
