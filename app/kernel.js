@@ -1,6 +1,7 @@
 var kernel = function() {
   // Get Config
-  var config        = require('./config');
+  var config        = require('./config').loadConfig();
+  console.log(config);
 
   // Define App & Server
   var express       = require('express');
