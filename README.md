@@ -6,3 +6,9 @@ Base structure for node application
 ``` sh
 git clone https://github.com/Antoine-Demailly/node-app.git myApp
 ```
+``` sh
+cd myApp
+```
+``` sh
+npm install
+```
