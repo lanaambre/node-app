@@ -7,11 +7,11 @@ var config = {};
 
 config.loadConfig = function() {
   try {
-    var doc = yaml.safeLoad(fs.readFileSync(__dirname + '/config.yml', 'utf8'));
-    return doc;
+    var data = yaml.safeLoad(fs.readFileSync(__dirname + '/config.yml', 'utf8'));
+    return data;
   } catch (e) {
     console.log(e);
-    return {};
+    return false;
   }
 };
 
