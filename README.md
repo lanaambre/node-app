@@ -12,3 +12,5 @@ cd myApp
 ``` sh
 npm install
 ```
+
+### Configuration (before launch application)
