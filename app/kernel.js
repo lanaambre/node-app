@@ -17,7 +17,7 @@ var kernel = function(config) {
   // Define view engine
   app.set('views', __dirname + '/views');
   app.set('view cache', true);
-  app.set('view engine', 'jade');
+  app.set('view engine', config.viewEngine);
 
   // Require Controllers
   require('./controllers/ExampleController')(app);

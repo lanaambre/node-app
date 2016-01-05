@@ -1,2 +1,5 @@
+# By default: ejs or jade
+viewEngine: ejs
+
 db:
   name: example
