@@ -1,5 +1,6 @@
 # By default: ejs or jade
 viewEngine: ejs
 
+# Database config
 db:
   name: example
