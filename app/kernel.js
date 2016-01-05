@@ -16,6 +16,7 @@ var kernel = function(config) {
 
   // Define view engine
   app.set('views', __dirname + '/views');
+  app.set('view cache', true);
   app.set('view engine', 'jade');
 
   // Require Controllers
