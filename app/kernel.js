@@ -20,7 +20,7 @@ var kernel = function(config) {
   app.set('view engine', config.viewEngine);
 
   // Require Controllers
-  require('./controllers/ExampleController')(app);
+  require('./controllers/LayoutController')(app);
 
   // Launch server
   server.listen(8888, function() {

@@ -2,7 +2,7 @@
 
 var controller = function(app) {
   app.get('/', function(req, res) {
-    res.render('example');
+    res.render('layout');
   });
 };
 
