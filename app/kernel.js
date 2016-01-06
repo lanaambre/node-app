@@ -16,8 +16,8 @@ var kernel = function(config) {
 
   // Define view engine
   app.set('views', __dirname + '/views');
-  app.set('view cache', !config.developmentMode);
-  app.set('view engine', config.viewEngine);
+  app.set('view cache', !config.server.developmentMode);
+  app.set('view engine', config.server.viewEngine);
 
   // Require Controllers
   require('./controllers/LayoutController')(app);
