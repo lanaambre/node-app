@@ -23,8 +23,8 @@ var kernel = function(config) {
   require('./controllers/LayoutController')(app);
 
   // Launch server
-  server.listen(8888, function() {
-    console.log('Listening on *:8888. Development mode: ' + config.developmentMode);
+  server.listen(config.server.port, function() {
+    console.log('Listening on *:' + config.server.port + '. Development mode: ' + config.developmentMode);
   });
 };
 

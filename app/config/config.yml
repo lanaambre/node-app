@@ -1,3 +1,7 @@
+# Server
+server:
+  port: 8888
+
 # By default: ejs or jade
 viewEngine: ejs
 
