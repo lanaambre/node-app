@@ -15,4 +15,14 @@ config.loadConfig = function() {
   }
 };
 
+config.loadRouting = function() {
+  try {
+    var data = yaml.safeLoad(fs.readFileSync(__dirname + '/routing.yml', 'utf8'));
+    return data;
+  } catch (e) {
+    console.log(e);
+    return false;
+  }
+};
+
 module.exports = config;
