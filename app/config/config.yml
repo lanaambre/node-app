@@ -1,6 +1,9 @@
 # By default: ejs or jade
 viewEngine: ejs
 
+# Set to false, in production
+developmentMode: false
+
 # Database config
 db:
   name: example

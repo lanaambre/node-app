@@ -16,7 +16,7 @@ var kernel = function(config) {
 
   // Define view engine
   app.set('views', __dirname + '/views');
-  app.set('view cache', true);
+  app.set('view cache', !config.developmentMode);
   app.set('view engine', config.viewEngine);
 
   // Require Controllers
@@ -24,7 +24,7 @@ var kernel = function(config) {
 
   // Launch server
   server.listen(8888, function() {
-    console.log('Listening on *:8888');
+    console.log('Listening on *:8888. Development mode: ' + config.developmentMode);
   });
 };
 
