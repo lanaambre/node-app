@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Antoine-Demailly/node-app#readme",
   "engines": {
-    "node": "v5.2.0"
+    "node": "v5.7.0"
   },
   "dependencies": {
     "colors": "1.1.2",

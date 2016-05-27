@@ -2,8 +2,14 @@
 server:
   port: 8888
   developmentMode: false
+  environment: dev
   viewEngine: ejs
 
 # Database config
 db:
-  name: example
+  host: localhost
+  user: example
+  password: example
+  database: example
+  connectionLimit: 100
+  multipleStatements: true

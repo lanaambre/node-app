@@ -8,15 +8,15 @@ var kernel = function(config) {
   var io            = require('socket.io')(server);
 
   // Define MongoDB
-  var mongoose      = require('mongoose');
-  mongoose.connect('mongodb://localhost/' + config.db.name);
+  // var mongoose      = require('mongoose');
+  // mongoose.connect('mongodb://localhost/' + config.db.name);
 
   // Define static folder
   app.use(express.static('public'));
 
   // Define view engine
   app.set('views', __dirname + '/views');
-  app.set('view cache', !config.server.developmentMode);
+  app.set('view cache', config.server.environment === 'prod');
   app.set('view engine', config.server.viewEngine);
 
   // Require Controllers
@@ -24,7 +24,7 @@ var kernel = function(config) {
 
   // Launch server
   server.listen(config.server.port, function() {
-    console.log('Listening on *:' + config.server.port + '. Development mode: ' + config.developmentMode);
+    console.log('Listening on *:' + config.server.port + '. Development mode: ' + config.server.environment);
   });
 };
 
