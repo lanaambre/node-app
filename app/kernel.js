@@ -4,10 +4,10 @@ var kernel = function(config) {
   var app           = express();
   var server        = require('http').Server(app);
 
-  // Define Socket.io
-  var io            = require('socket.io')(server);
+  //Uncomment to use Socket.io
+  // var io            = require('socket.io')(server);
 
-  // Define MongoDB
+  // Uncomment to use MongoDB
   // var mongoose      = require('mongoose');
   // mongoose.connect('mongodb://localhost/' + config.db.name);
 
