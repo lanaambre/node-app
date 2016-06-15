@@ -1,7 +1,8 @@
 var colors = require('colors');
 var config = require('./app/config').loadConfig();
 
-if (config)
+if (config) {
   require('./app/kernel')(config);
-else
+} else {
   console.log('Server stop - Message: Probably missing config file.'.red);
+}

@@ -1,5 +1,6 @@
 # Server
 server:
+  name: node-app
   port: 8888
   developmentMode: false
   environment: dev
