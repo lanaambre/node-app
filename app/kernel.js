@@ -1,4 +1,8 @@
-var kernel = function(config) {
+var kernel = function() {
+
+  // Get Config
+  var config = global.config;
+
   // Define App & Server
   var express       = require('express');
   var app           = express();
@@ -24,7 +28,7 @@ var kernel = function(config) {
 
   // Launch server
   server.listen(config.server.port, function() {
-    console.log('Listening on *:' + config.server.port + '. Development mode: ' + config.server.environment);
+    console.log('Listening on *:' + config.server.port + '. Environment: ' + config.server.environment);
   });
 };
 
