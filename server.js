@@ -1,8 +1,8 @@
-var colors = require('colors');
+const colors = require('colors');
 global.config = require('./app/config').loadConfig();
 
 // Server options
-var options = require('./app/config/options')(global.config);
+const options = require('./app/config/options')(global.config);
 
 if (config) {
   require('./app/kernel')();

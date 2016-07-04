@@ -1,14 +1,13 @@
 'use strict';
 
-var yaml = require('js-yaml');
-var fs   = require('fs');
+const yaml = require('js-yaml');
+const fs   = require('fs');
 
-var config = {};
+let config = {};
 
 config.loadConfig = function() {
   try {
-    var data = yaml.safeLoad(fs.readFileSync(__dirname + '/config.yml', 'utf8'));
-    return data;
+    return yaml.safeLoad(fs.readFileSync(__dirname + '/config.yml', 'utf8'));
   } catch (e) {
     console.log(e);
     return false;

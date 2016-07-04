@@ -1,6 +1,6 @@
 'use strict';
 
-var controller = function(app) {
+const controller = function(app) {
   app.get('/', function(req, res) {
     res.render('layout');
   });

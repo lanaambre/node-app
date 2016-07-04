@@ -1,15 +1,15 @@
-var kernel = function() {
+const kernel = function() {
 
   // Get Config
-  var config = global.config;
+  const config = global.config;
 
   // Define App & Server
-  var express       = require('express');
-  var app           = express();
-  var server        = require('http').Server(app);
+  const express       = require('express');
+  const app           = express();
+  const server        = require('http').Server(app);
 
   //Uncomment to use Socket.io
-  // var io            = require('socket.io')(server);
+  const io            = require('socket.io')(server);
 
   // Uncomment to use MongoDB
   // var mongoose      = require('mongoose');

@@ -1,8 +1,8 @@
 'use strict';
 
-var program = require('commander');
+const program = require('commander');
 
-var options = function(config) {
+const options = function(config) {
   program
     .version('0.0.1')
     .option('-p, --port [port]', 'Choose a port for your application', config.server.port)
