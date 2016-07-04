@@ -24,7 +24,7 @@ const kernel = function() {
   app.set('view engine', config.server.viewEngine);
 
   // Require Controllers
-  require('./controllers/LayoutController')(app);
+  require('./components/layout/layout.controller')(app);
 
   // Launch server
   server.listen(config.server.port, function() {
