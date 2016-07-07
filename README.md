@@ -12,8 +12,5 @@ cd myApp
 ``` sh
 npm install
 ```
-``` sh
-bower install
-```
 
 ### Configuration
