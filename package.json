@@ -21,6 +21,7 @@
     "node": "v5.7.0"
   },
   "dependencies": {
+    "body-parser": "1.15.2",
     "colors": "1.1.2",
     "commander": "2.9.0",
     "ejs": "2.3.4",

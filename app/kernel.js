@@ -7,6 +7,11 @@ const kernel = function() {
   const express       = require('express');
   const app           = express();
   const server        = require('http').Server(app);
+  const bodyParser    = require('body-parser');
+
+  // Config body parser
+  app.use(bodyParser.urlencoded({extended: false}));
+  app.use(bodyParser.json());
 
   //Uncomment to use Socket.io
   const io            = require('socket.io')(server);
